@@ -26,7 +26,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-
+  background: white;
   font-size: 1rem;
   line-height: 1.5rem;
 }
@@ -40,6 +40,44 @@ video {
   max-inline-size: 100%;
   block-size: auto;
   vertical-align: middle;
+}
+
+.section {
+  display: flex;
+  background: var(--green);
+  margin: 15px;
+}
+
+.box {
+  background: var(--dark-blue);
+  color: var(--white);
+  padding: 20px;
+  margin: 10px;
+}
+
+.section-1 {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.section-2 {
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.section-3 {
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.section-4 {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.section-5 {
+  flex-direction: column;
+  align-items: center;
 }
 
 /* ====================================
